@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joshua Cervantes | Data Services Coordinator</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="container nav">
+        <h1 class = "Mylogo">JC</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+			<a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container hero-content">
+
+        <div class="hero-text">
+            <h2>
+                Data Services Coordinator
+            </h2>
+            <p>
+                Data-driven professional with technical support and creative media capabilities.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">Contact Me</a>
+                <a href="#" class="btn-secondary">View Resume</a>
+            </div>
+        </div>
+	
+	
+        <div class="hero-image">
+            <div class="image-wrapper">
+                <img src="C:\Users\Joshua\Downloads\MyPortfolio\JC-profileimage.jpg" alt="Joshua Cervantes" class="profile-img">
+                <div class="glow-ring"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>
+		I am a Data Services Coordinator with experience in data management, reporting, and process optimization. 
+		I specialize in maintaining data accuracy, improving workflows, and supporting organizational operations through reliable and efficient systems.
+		<br><br>In addition to my data background, I bring hands-on experience in video editing and technical support. 
+		I enjoy combining analytical thinking with creative problem-solving, 
+		whether it's streamlining data processes, troubleshooting technical issues, or producing engaging visual content.
+		I’m passionate about continuous learning and leveraging both technical and creative skills to deliver value across teams.</p>
+    </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="cards">
+      <div class="card data">
+        <h3>Core Skills (Data Focused)</h3>
+        <ul>
+          <li>Database Management</li>
+          <li>Data Validation</li>
+          <li>ETL Processes</li>
+          <li>Data Governance</li>
+          <li>Reporting Automation</li>
+          <li>Data Quality Assurance</li>
+        </ul>
+      </div>
+
+      <div class="card technical">
+        <h3>Technical & Support Skills</h3>
+        <ul>
+          <li>Technical Troubleshooting</li>
+          <li>Hardware Support</li>
+          <li>System Support</li>
+        </ul>
+      </div>
+
+      <div class="card creative">
+        <h3>Creative Skills</h	3>
+        <ul>
+          <li>Video Editing</li>
+          <li>Basic Graphic Design</li>
+          <li>PowerPoint Presentation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="experience">
+    <div class="container">
+        <h2>Experience</h2>
+
+        <div class="job">
+            <h3>Data Services Coordinator</h3>
+            <span>August 2025 – Present</span>
+            <p>Manage data workflows, reporting systems, and cross-department data initiatives.</p>
+        </div>
+
+        <div class="job">
+            <h3>Quality Control Analyst, Cloudstaff</h3>
+            <span>December 2023 – August 2025</span>
+            <p>Developed dashboards and validating data with precision and high attention to details</p>
+        </div>
+		
+        <div class="job">
+            <h3>Quality Control Analyst, Novally</h3>
+            <span>July 2022 – November 2023</span>
+            <p>Developed dashboards and validating data with precision and high attention to details</p>
+        </div>
+
+        <div class="job">
+            <h3>Tech-Support, VXI</h3>
+            <span>July 2020 – December 2020</span>
+            <p>Provides remote assistance to customers, troubleshooting technical issues and guiding them to resolve software, hardware, or service-related problems.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="projects">
+    <div class="container">
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card"
+                 data-title="Automated Reporting System"
+                 data-description="Automated reporting processes using Google Sheets, cutting manual effort by 40%. Designed and maintained Looker Studio dashboards with scheduled data updates for efficient decision-making."
+                 data-tech="GoogleSheet • LookerStudio • ETL • Automation">
+                <h3>Automated Reporting</h3>
+                <p>Click to view details</p>
+            </div>
+
+            <div class="project-card"
+                 data-title="Data Quality Framework"
+                 data-description="Designed validation rules, implemented governance standards, and improved data accuracy by 30% across departments."
+                 data-tech="Data Governance • SQL • QA">
+                <h3>Data Quality Framework</h3>
+                <p>Click to view details</p>
+            </div>
+
+            <div class="project-card"
+                 data-title="Executive Dashboard Suite"
+                 data-description="Created cross-functional dashboards for leadership reporting and KPI tracking."
+                 data-tech="Power BI • Tableau • KPI Reporting">
+                <h3>Executive Dashboards</h3>
+                <p>Click to view details</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <p>Send me a message and I’ll get back to you as soon as possible.</p>
+
+    <form id="contact-form">
+      <input type="text" name="client_name" placeholder="Your Name" required>
+      <input type="email" name="client_email" placeholder="Your Email" required>
+      <textarea name="client_message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-primary">Send Message</button>
+      <div id="form-message"></div>
+    </form>
+  </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Joshua Cervantes</p>
+    </div>
+</footer>
+
+<div id="projectModal" class="modal">
+    <div class="modal-content">
+        
+        <button class="close-icon">&times;</button>
+
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription"></p>
+        <p class="modal-tech" id="modalTech"></p>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
