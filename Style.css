@@ -264,7 +264,8 @@ section h2 {
 
 /* Individual Cards */
 #skills .card {
-    background: #1a1a1f;
+    background: rgba(255,255,255,0.05);
+	backdrop-filter: blur(10px);
     border-radius: 16px;
     padding: 25px 20px;
     width: 280px;
@@ -353,77 +354,89 @@ section h2 {
     color: white;
 }
 
+/* Projects Grid */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    gap: 2rem;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+/* Blue Gradient Card */
 .project-card {
-    background: rgba(255,255,255,0.05);
-    padding: 2rem;
+    background: linear-gradient(145deg, #4a90e2, #357ab8);
     border-radius: 16px;
+    padding: 20px;
+    color: white;
     cursor: pointer;
-    transition: 0.3s;
-    backdrop-filter: blur(10px);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-8px);
-    background: rgba(255,255,255,0.1);
+    transform: translateY(-6px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.25);
 }
 
-/* MODAL */
+/* Modal Background */
 .modal {
     display: none;
     position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
     justify-content: center;
     align-items: center;
-    padding: 1rem;
-    z-index: 2000;
+    padding: 20px;
+    z-index: 1000;
+    backdrop-filter: blur(2px);
 }
 
+/* Modal Content with Frosted Glass */
 .modal-content {
-    background: #111827;
-    padding: 2rem;
-    border-radius: 16px;
-    max-width: 500px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 25px;
+    max-width: 600px;
     width: 100%;
-    animation: fadeIn 0.3s ease;
     position: relative;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.modal-content {
-    margin-bottom: 1rem;
-	color: #fff;
+/* Show modal content with animation */
+.modal.show .modal-content {
+    transform: translateY(0);
+    opacity: 1;
 }
 
-.modal-tech {
-    margin-top: 1rem;
-    font-weight: bold;
-    color: #3b82f6;
+/* Modal Image */
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 15px;
+    object-fit: contain;
 }
 
-.close-btn {
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-/* CLOSE ICON (top right) */
+/* Close Icon */
 .close-icon {
     position: absolute;
     top: 15px;
-    right: 18px;
-    font-size: 1.6rem;
-    background: none;
-    border: none;
-    color: white;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
     cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-icon:hover {
+    color: #000;
 }
 
 /* CONTACT SECTION*/
